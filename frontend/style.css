@@ -1,0 +1,59 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+body.light {
+    background: white;
+    color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.box {
+    background: rgba(0,0,0,0.4);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+body.light .box {
+    background: #f2f2f2;
+}
+
+#profilePic {
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255,255,255,0.1);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+}

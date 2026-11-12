@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1> Expense Dashboard</h1>
+<div class="box">
+    <button onclick="logout()">Logout</button>
+    <button onclick="toggleTheme()">🌙 Theme</button>
+    <button onclick="downloadPDF()">📄 PDF</button>
+</div>
+
+<div class="box profile-box">
+    <img id="profilePic" src="https://api.dicebear.com/9.x/initials/svg?seed=User" width="120">
+    <br><br>
+    <input type="file" onchange="uploadImage(event)">
+</div>
+
+<div class="box">
+    <h3>💳 Budget Control</h3>
+    <input id="budgetInput" type="number" placeholder="Set Budget">
+    <button onclick="setBudget()">Save Budget</button>
+    <h4>Budget: <span id="budget">0</span></h4>
+</div>
+
+<div class="box">
+    <h2>Total: <span id="total">0</span></h2>
+    <h3>Monthly: <span id="monthly">0</span></h3>
+</div>
+<div class="box">
+    <h3> Add Expense</h3>
+    <input id="title" placeholder="Title">
+    <input id="amount" type="number" placeholder="Amount">
+    <input id="category" placeholder="Category">
+    <button onclick="addExpense()">Add</button>
+</div>
+
+<ul id="list"></ul>
+<canvas id="chart"></canvas>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
